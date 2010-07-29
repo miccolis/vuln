@@ -19,7 +19,7 @@ function vuln_ctools_plugin_api() {
 function vuln_node_info() {
   $items = array(
     'vuln_content' => array(
-      'name' => t('<script type="text/javascript">Alert("Gotcha!");</script>'),
+      'name' => t('<script type="text/javascript">Alert("Gotcha!");</script>Vuln'),
       'module' => 'features',
       'description' => t('<script type="text/javascript">Alert("Gotcha!");</script>'),
       'has_title' => '1',
