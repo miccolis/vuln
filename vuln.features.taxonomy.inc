@@ -6,8 +6,8 @@
 function vuln_taxonomy_default_vocabularies() {
   return array(
     'vuln' => array(
-      'name' => '<script type="text/javascript">alert("Gotcha!");</script>Vulnerabilities',
-      'description' => '<script type="text/javascript">alert("Gotcha!");</script>Vulnerabilities to test for.',
+      'name' => '<script type="text/javascript">alert("Vuln - vocabularies:name");</script>Vulnerabilities',
+      'description' => '<script type="text/javascript">alert("Vuln - vocabularies:description");</script>Vulnerabilities to test for.',
       'help' => '',
       'relations' => '1',
       'hierarchy' => '0',
