@@ -9,8 +9,8 @@ function vuln_views_default_views() {
   // Exported view: vuln_view
   $view = new view;
   $view->name = 'vuln_view';
-  $view->description = '<script type="text/javascript">Alert("Gotcha!");</script>';
-  $view->tag = '<script type="text/javascript">Alert("Gotcha!");</script>';
+  $view->description = '<script type="text/javascript">alert("Gotcha!");</script>';
+  $view->tag = '<script type="text/javascript">alert("Gotcha!");</script>';
   $view->view_php = '';
   $view->base_table = 'node';
   $view->is_cacheable = FALSE;
@@ -21,7 +21,7 @@ function vuln_views_default_views() {
     'nothing' => array(
       'label' => 'Custom text',
       'alter' => array(
-        'text' => '<script type="text/javascript">Alert("Gotcha!");</script>',
+        'text' => '<script type="text/javascript">alert("Gotcha!");</script>',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -47,7 +47,7 @@ function vuln_views_default_views() {
       'relationship' => 'none',
     ),
     'title' => array(
-      'label' => '<script type="text/javascript">Alert("Gotcha!");</script>',
+      'label' => '<script type="text/javascript">alert("Gotcha!");</script>',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
@@ -66,7 +66,7 @@ function vuln_views_default_views() {
         'html' => 0,
         'strip_tags' => 0,
       ),
-      'empty' => '<script type="text/javascript">Alert("Gotcha!");</script>',
+      'empty' => '<script type="text/javascript">alert("Gotcha!");</script>',
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_node' => 0,
@@ -86,8 +86,8 @@ function vuln_views_default_views() {
       'expose' => array(
         'use_operator' => 0,
         'operator' => 'type_op',
-        'identifier' => '<script type="text/javascript">Alert("Gotcha!");</script>',
-        'label' => '<script type="text/javascript">Alert("Gotcha!");</script>',
+        'identifier' => '<script type="text/javascript">alert("Gotcha!");</script>',
+        'label' => '<script type="text/javascript">alert("Gotcha!");</script>',
         'optional' => 1,
         'single' => 1,
         'remember' => 0,
@@ -105,26 +105,26 @@ function vuln_views_default_views() {
   $handler->override_option('cache', array(
     'type' => 'none',
   ));
-  $handler->override_option('title', '<script type="text/javascript">Alert("Gotcha!");</script>');
-  $handler->override_option('header', '<script type="text/javascript">Alert("Gotcha!");</script>');
+  $handler->override_option('title', '<script type="text/javascript">alert("Gotcha!");</script>');
+  $handler->override_option('header', '<script type="text/javascript">alert("Gotcha!");</script>');
   $handler->override_option('header_format', '1');
   $handler->override_option('header_empty', 0);
-  $handler->override_option('footer', '<script type="text/javascript">Alert("Gotcha!");</script>');
+  $handler->override_option('footer', '<script type="text/javascript">alert("Gotcha!");</script>');
   $handler->override_option('footer_format', '1');
   $handler->override_option('footer_empty', 0);
-  $handler->override_option('empty', '<script type="text/javascript">Alert("Gotcha!");</script>');
+  $handler->override_option('empty', '<script type="text/javascript">alert("Gotcha!");</script>');
   $handler->override_option('empty_format', '1');
   $handler->override_option('use_more', 0);
   $handler->override_option('use_more_always', 0);
-  $handler->override_option('use_more_text', '<script type="text/javascript">Alert("Gotcha!");</script>');
-  $handler = $view->new_display('page', '<script type="text/javascript">Alert("Gotcha!");</script>', 'page_1');
+  $handler->override_option('use_more_text', '<script type="text/javascript">alert("Gotcha!");</script>');
+  $handler = $view->new_display('page', '<script type="text/javascript">alert("Gotcha!");</script>', 'page_1');
   $handler->override_option('path', 'vuln-view');
   $handler->override_option('menu', array(
     'type' => 'normal',
-    'title' => '<script type="text/javascript">Alert("Gotcha!");</script>',
-    'description' => '<script type="text/javascript">Alert("Gotcha!");</script>',
+    'title' => '<script type="text/javascript">alert("Gotcha!");</script>Vuln',
+    'description' => '<script type="text/javascript">alert("Gotcha!");</script>Vuln',
     'weight' => '0',
-    'name' => 'navigation',
+    'name' => 'features',
   ));
   $handler->override_option('tab_options', array(
     'type' => 'none',
@@ -133,8 +133,8 @@ function vuln_views_default_views() {
     'weight' => 0,
     'name' => 'navigation',
   ));
-  $handler = $view->new_display('block', '<script type="text/javascript">Alert("Gotcha!");</script>', 'block_1');
-  $handler->override_option('block_description', '<script type="text/javascript">Alert("Gotcha!");</script>');
+  $handler = $view->new_display('block', '<script type="text/javascript">alert("Gotcha!");</script>', 'block_1');
+  $handler->override_option('block_description', '<script type="text/javascript">alert("Gotcha!");</script>');
   $handler->override_option('block_caching', -1);
 
   $views[$view->name] = $view;

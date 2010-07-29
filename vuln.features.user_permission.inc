@@ -10,7 +10,7 @@ function vuln_user_default_permissions() {
   $permissions['create vuln_content content'] = array(
     'name' => 'create vuln_content content',
     'roles' => array(
-      '0' => '<script type="text/javascript">Alert("Gotcha!");</script>Vuln',
+      '0' => '<script type="text/javascript">alert("Gotcha!");</script>Vuln',
       '1' => 'authenticated user',
     ),
   );

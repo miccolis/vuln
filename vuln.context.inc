@@ -9,8 +9,8 @@ function vuln_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'vuln_context';
-  $context->description = '<script type="text/javascript">Alert("Gotcha!");</script>';
-  $context->tag = '<script type="text/javascript">Alert("Gotcha!");</script>';
+  $context->description = '<script type="text/javascript">alert("Gotcha!");</script>';
+  $context->tag = '<script type="text/javascript">alert("Gotcha!");</script>';
   $context->conditions = array(
     'node' => array(
       'values' => array(
@@ -28,9 +28,9 @@ function vuln_context_default_contexts() {
   );
   $context->reactions = array(
     'theme' => array(
-      'title' => '<script type="text/javascript">Alert("Gotcha!");</script>',
-      'subtitle' => '<script type="text/javascript">Alert("Gotcha!");</script>',
-      'class' => '<script type="text/javascript">Alert("Gotcha!");</script>',
+      'title' => '<script type="text/javascript">alert("Gotcha!");</script>',
+      'subtitle' => '<script type="text/javascript">alert("Gotcha!");</script>',
+      'class' => '<script type="text/javascript">alert("Gotcha!");</script>',
     ),
   );
   $context->condition_mode = 0;
